@@ -41,7 +41,7 @@ public class JeuxDAO {
 					jeux.setDateSortie(rs.getDate("jeux_dateSortie"));
 					jeux.setPaysOrigine(rs.getString("jeux_paysOrigine"));
 					jeux.setConnexion(rs.getString("jeux_connexion"));
-					jeux.setJeuxMode(rs.getString("jeux_mode"));
+					jeux.setMode(rs.getString("jeux_mode"));
 					jeux.setGenreId(rs.getInt("genre_id"));
 
 					jeuxList.add(jeux);

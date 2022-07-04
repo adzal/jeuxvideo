@@ -20,11 +20,15 @@ public class Main {
 			jeuxDAO.updateTitreById(19, "the classroom");
 				
 			Jeux jeux = new Jeux();
-			jeux.setTitre("Shuffaball");
-			jeux.setDescription("Bouncy fun");
-			jeux.setPrix(1);
-			jeux.setGenreId(8);
-			
+            jeux.setTitre("Shuffaball");
+            jeux.setDescription("Bouncy fun");
+            jeux.setPrix(1);
+            jeux.setGenreId(8);
+            jeux.setDateSortie(java.sql.Date.valueOf("2012-12-12"));
+            jeux.setPaysOrigine("Ecosse");
+            jeux.setConnexion("OffLine");
+            jeux.setMode("Solo");
+
 			jeuxDAO.insertJeux(jeux);
 			
 			jeuxDAO.deleteJeuxById(jeux.getJeuxId());
