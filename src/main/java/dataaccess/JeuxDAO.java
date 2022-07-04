@@ -38,8 +38,8 @@ public class JeuxDAO {
 					jeux.setTitre(rs.getString("jeux_titre"));
 					jeux.setDescription(rs.getString("jeux_description"));
 					jeux.setPrix(rs.getDouble("jeux_prix"));
-					jeux.setDateSortie(rs.getDate("jeux_dateSortie"));
-					jeux.setPaysOrigine(rs.getString("jeux_paysOrigine"));
+					jeux.setDateSortie(rs.getDate("jeux_datesortie"));
+					jeux.setPaysOrigine(rs.getString("jeux_paysorigine"));
 					jeux.setConnexion(rs.getString("jeux_connexion"));
 					jeux.setMode(rs.getString("jeux_mode"));
 					jeux.setGenreId(rs.getInt("genre_id"));
@@ -75,7 +75,7 @@ public class JeuxDAO {
 			p.setDate(4, jeux.getDateSortie());
 			p.setString(5, jeux.getPaysOrigine());
 			p.setString(6, jeux.getConnexion());
-			p.setString(7, jeux.getJeuxMode());
+			p.setString(7, jeux.getMode());
 			p.setInt(8, jeux.getGenreId());
 			int affectedRows = p.executeUpdate();
 
