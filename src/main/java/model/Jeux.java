@@ -17,6 +17,7 @@ public class Jeux {
 	private String connexion;
 	private String mode;
 	private int genreId;
+
 //
 //	public int getJeuxId() {
 //		return jeuxId;
