@@ -7,7 +7,6 @@ import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 
 public class ConnectDetailsSerializer {
-	// ConnectionDetails jvConn = new ConnectionDetails("jdbc:mysql://localhost:3306/jeuxvideo","java","FS0ZEHzh");
 	public static ConnectionDetails getConnectionDetails()
 			throws JsonSyntaxException, JsonIOException, FileNotFoundException {
 		Gson gson = new Gson();
